@@ -18,3 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: woodruffw-experiments/gha-trickery@good
+
+  test-pinned-good:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: woodruffw-experiments/gha-trickery@2a6d8740b45f670eaca097355b63c23aee3c41f4
