@@ -33,3 +33,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: woodruffw-experiments/gha-trickery@2a6d8740b45f67
+
+  test-tag-good-2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: woodruffw-experiments/gha-trickery@good-2
+
+  test-pinned-good-2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: woodruffw-experiments/gha-trickery@0190375bcac5f387c48791fb68bb5f25aef75328
+
+  test-pinned-good-2-truncated:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: woodruffw-experiments/gha-trickery@0190375b
+
