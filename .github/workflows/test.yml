@@ -61,3 +61,9 @@ jobs:
     steps:
       # ambiguous (good-branch is good in branches namespace, evil in tags namespace)
       - uses: woodruffw-experiments/gha-trickery@good-branch
+
+  test-pinned-good-tag-3:
+    runs-on: ubuntu-latest
+    steps:
+      # ambiguous (good-tag-3 is good in tags namespace, evil in branches namespace)
+      - uses: woodruffw-experiments/gha-trickery@good-branch
