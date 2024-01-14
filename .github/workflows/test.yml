@@ -28,3 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: woodruffw-experiments/gha-trickery@2a6d8740
+
+  test-pinned-good-truncated-longer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: woodruffw-experiments/gha-trickery@2a6d8740b45f67
