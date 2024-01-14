@@ -17,35 +17,42 @@ jobs:
   test-tag-good:
     runs-on: ubuntu-latest
     steps:
+      # benign workflow, referenced by `good` tag (tags namespace)
       - uses: woodruffw-experiments/gha-trickery@good
 
   test-pinned-good:
     runs-on: ubuntu-latest
     steps:
+      # benign workflow, referenced by full SHA ref (commits namespace)
       - uses: woodruffw-experiments/gha-trickery@2a6d8740b45f670eaca097355b63c23aee3c41f4
 
   test-pinned-good-truncated:
     runs-on: ubuntu-latest
     steps:
+      # seemingly benign workflow, but actually evil (tags namespace)
       - uses: woodruffw-experiments/gha-trickery@2a6d8740
 
   test-pinned-good-truncated-longer:
     runs-on: ubuntu-latest
     steps:
+      # seemingly benign workflow, but actually evil (tags namespace)
       - uses: woodruffw-experiments/gha-trickery@2a6d8740b45f67
 
   test-tag-good-2:
     runs-on: ubuntu-latest
     steps:
+      # another benign workflow (tags namespace)
       - uses: woodruffw-experiments/gha-trickery@good-2
 
   test-pinned-good-2:
     runs-on: ubuntu-latest
     steps:
+      # another benign workflow (commits namespace)
       - uses: woodruffw-experiments/gha-trickery@0190375bcac5f387c48791fb68bb5f25aef75328
 
   test-pinned-good-2-truncated:
     runs-on: ubuntu-latest
     steps:
+      # semingly benign workflow, but actually evil (tags namespace)
       - uses: woodruffw-experiments/gha-trickery@0190375b
 
