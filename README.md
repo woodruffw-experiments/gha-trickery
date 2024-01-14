@@ -54,3 +54,7 @@ Turns out this doesn't really work.
 
 TL;DR: there's a limited amount of namespace confusion, but seemingly not enough
 to trick a pre-existing workflow into switching from a commit ref to a tag ref.
+
+## Other avenues
+
+`uses:` supports other namespaces that are confusable, like tags and branches.
