@@ -1,0 +1,9 @@
+name: "gha-trickery"
+author: "William Woodruff <william@yossarian.net>"
+description: "namespace confusion in GitHub Actions?"
+runs:
+  using: composite
+  steps:
+    - run: |
+        echo "nothing to see here"
+      shell: bash
