@@ -67,3 +67,9 @@ Run woodruffw-experiments/gha-trickery@good-branch
 Run echo "nothing to see here"
 nothing to see here
 ```
+
+So, there's a limited confusion vector here:
+
+1. A workflow has `uses: foo/bar@good`, which is normally a reference to a "safe" tag (in the tags namespace)
+1. A disgruntled maintainer pushes a malicious branch named `good`, **without** deleting the original `good` tag
+1. The original workflow now uses the malicious branch
