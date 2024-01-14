@@ -66,4 +66,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # ambiguous (good-tag-3 is good in tags namespace, evil in branches namespace)
-      - uses: woodruffw-experiments/gha-trickery@good-branch
+      - uses: woodruffw-experiments/gha-trickery@good-tag-3
