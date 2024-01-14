@@ -56,3 +56,8 @@ jobs:
       # semingly benign workflow, but actually evil (tags namespace)
       - uses: woodruffw-experiments/gha-trickery@0190375b
 
+  test-pinned-good-branch:
+    runs-on: ubuntu-latest
+    steps:
+      # benign workflow (branches namespace)
+      - uses: woodruffw-experiments/gha-trickery@good-branch
