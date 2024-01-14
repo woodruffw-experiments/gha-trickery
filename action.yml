@@ -5,5 +5,5 @@ runs:
   using: composite
   steps:
     - run: |
-        echo "nothing to see here"
+        echo "this is evil"
       shell: bash
