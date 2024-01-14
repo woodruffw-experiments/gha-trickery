@@ -13,3 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./
+
+  test-tag-good:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: woodruffw-experiments/gha-trickery@good
